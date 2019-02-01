@@ -1,0 +1,14 @@
+// Core variables and mixins
+@import "./components/variables";
+@import "./components/mixins";
+// Global CSS
+@import "./components/global";
+// Components
+@import "./components/navbar";
+@import "./components/masthead";
+@import "./components/services";
+@import "./components/portfolio";
+@import "./components/timeline";
+@import "./components/team";
+@import "./components/contact";
+@import "./components/footer";
