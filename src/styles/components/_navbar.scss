@@ -1,7 +1,7 @@
 // Styling for the navbar
 .mainNav {
   border-bottom: 1px solid fade-out($gray-900, .9);
-  background-color: $white;
+  background-color: $dark;
   @include serif-font;
   transition: all;
   .navbar-brand {
@@ -21,9 +21,9 @@
         font-size: .9rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: $gray-900;
+        color: $white;
         &:hover {
-          color: $primary;
+          color: rgba($color: $primary, $alpha: 1.0) !important;
         }
         &.active {
           color: $primary !important;
@@ -39,6 +39,9 @@
   @media (min-width: 992px) {
     border-color: transparent;
     background-color: transparent;
+    .hidden {
+      display: block;
+    }
     .navbar-brand {
       color: fade-out($white, .4);
       &:focus,
@@ -75,6 +78,11 @@
       }
     }
   }
+  @media (max-width: 994px) {
+    .hidden {
+      display: none;
+    }
+  }
 }
 
 .headroom {
@@ -106,12 +114,14 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 
   .mainNav{
-    background-color: rgba($color: $primary, $alpha: 0.98);
+    background-color: rgba($color: $dark, $alpha: 0.98);
+    .active {
+      color: rgba($color: $primary, $alpha: 1.0) !important;
+    }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .2) !important;
       &:hover {
-        color: rgba(255, 255, 255, 0.98) !important;
+        color: rgba($color: $primary, $alpha: 1.0) !important;
       }
     }
   }
@@ -129,4 +139,14 @@
   //     color: rgb(255, 255, 255);
   // }
  
+}
+
+.nav-toggler{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  @media (min-width: 994px) {
+    visibility: hidden;
+  }
 }

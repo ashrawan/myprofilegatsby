@@ -13,6 +13,7 @@ class Navigation extends React.Component {
     }
 
     toggle() {
+        console.log(this.state.isOpen);
         this.setState({
             isOpen: !this.state.isOpen
         });
@@ -34,12 +35,12 @@ class Navigation extends React.Component {
                         }}>
                     <span className="fixed-top" ref={ref => this.myDiv = ref}>
                         <nav className="navbar navbar-expand-lg navbar-light mainNav">
+                            <button className="nav-toggler" type="button" onClick={() => this.toggle()}>
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
                             <div className="container">
                                 <Link className="navbar-brand nav-link" activeClass="active" to="section-header" spy={true} smooth={true} duration={500}> SHRAWAN ADHIKARI </Link>
-                                <button className="navbar-toggler navbar-toggler-right" type="button" onClick={() => this.toggle()}>
-                                    <span className="navbar-toggler-icon"></span>
-                                </button>
-                                <div id="navbarResponsive">
+                                <div className={this.state.isOpen ? '' : 'hidden'} id="navbarResponsive">
                                     <ul className="navbar-nav ml-auto" style={{ display: 'inline-flex' }}>
                                         <li className="nav-item">
                                             <Link className="nav-link" activeClass="active" to="section-header" spy={true} smooth={true} duration={500}> Home </Link>
