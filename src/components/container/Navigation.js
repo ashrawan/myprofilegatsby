@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-scroll';
 
@@ -8,13 +8,20 @@ class Navigation extends React.Component {
         super(props)
 
         this.state = {
-            isOpen: false
+            isOpen: true
         };
     }
+
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+
     render() {
         return (
-            <div>
-                <Headroom
+            <>
+                <Headroom className="wrapper-headroom-fix"
                     onUnpin={
                         () => {
                             const element = this.myDiv;
@@ -24,18 +31,16 @@ class Navigation extends React.Component {
                         () => {
                             const element = this.myDiv;
                             element.classList.add('fixed-top');
-                        }}
-                >
+                        }}>
                     <span className="fixed-top" ref={ref => this.myDiv = ref}>
                         <nav className="navbar navbar-expand-lg navbar-light mainNav">
                             <div className="container">
-                                {/* <a className="navbar-brand" href="#page-top">Home</a> */}
-                                <Link className="navbar-brand nav-link" activeClass="active" to="section-top" spy={true} smooth={true} duration={500}> SHRAWAN ADHIKARI </Link>
-                                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                <Link className="navbar-brand nav-link" activeClass="active" to="section-header" spy={true} smooth={true} duration={500}> SHRAWAN ADHIKARI </Link>
+                                <button className="navbar-toggler navbar-toggler-right" type="button" onClick={() => this.toggle()}>
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
-                                <div className="collapse navbar-collapse" id="navbarResponsive">
-                                    <ul className="navbar-nav ml-auto">
+                                <div id="navbarResponsive">
+                                    <ul className="navbar-nav ml-auto" style={{ display: 'inline-flex' }}>
                                         <li className="nav-item">
                                             <Link className="nav-link" activeClass="active" to="section-header" spy={true} smooth={true} duration={500}> Home </Link>
                                         </li>
@@ -57,7 +62,7 @@ class Navigation extends React.Component {
                         </nav>
                     </span>
                 </Headroom>
-            </div>
+            </>
         );
     }
 }

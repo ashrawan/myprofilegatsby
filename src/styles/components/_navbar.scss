@@ -3,7 +3,7 @@
   border-bottom: 1px solid fade-out($gray-900, .9);
   background-color: $white;
   @include serif-font;
-  // @include transition-all;
+  transition: all;
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
@@ -96,10 +96,17 @@
 .headroom--scrolled {
   transition: transform 200ms linear;
 }
-
+.wrapper-headroom-fix {
+  height: 0px !important;
+}
 .headroom--unpinned, .headroom--pinned {
+  position: fixed !important;
+  z-index: 10 !important;
+  transform: translateY(-100%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+
   .mainNav{
-    background-color: rgba(202, 84, 57, 0.98) !important;
+    background-color: rgba($color: $secondary, $alpha: 0.98);
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
       color: fade-out($white, .2) !important;
@@ -115,12 +122,6 @@
       color: #d8d3c2 !important;
     }
   }
-  position: fixed !important;
-  z-index: 10 !important;
-  transform: translateY(-100%);
-  background-color: rgb(117, 64, 64) !important;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-
   .navbar .navbar-nav li a {
       color: rgb(253, 253, 253) !important;
   }

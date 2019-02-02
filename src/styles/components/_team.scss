@@ -2,10 +2,16 @@
 .team-member {
   margin-bottom: 50px;
   text-align: center;
-  img {
-    width: 225px;
-    height: 225px;
+  .company-logo {
     border: 7px solid $white;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: all .4s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   h4 {
     margin-top: 25px;

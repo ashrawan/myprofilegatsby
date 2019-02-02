@@ -1,0 +1,81 @@
+// Styling for the portfolio section
+#projects {
+  .project-item {
+    right: 0;
+    margin: 0 0 15px;
+    text-align: center;
+    transition: all .4s ease-out;
+    &:hover {
+      transform: scale(1.07);
+    }
+    .img-portfolio {
+      max-width: 400px;
+      min-height: 187px;
+      max-height: 187px;
+    }
+    .project-link {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+      .project-hover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        opacity: 0;
+        background: fade-out($primary, .1);
+        &:hover {
+          opacity: 1;
+        }
+        .project-hover-content {
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          height: 20px;
+          margin-top: -12px;
+          text-align: center;
+          color: white;
+          i {
+            margin-top: -12px;
+          }
+          h3,
+          h5 {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .project-caption {
+      max-width: 400px;
+      font-size: 90%;
+      margin: 0 auto;
+      padding: 25px;
+      text-align: center;
+      background-color: $white;
+      h5 {
+        margin: 0;
+        text-transform: none;
+      }
+      p {
+        font-size: 16px;
+        font-style: italic;
+        margin: 0;
+        @include serif-font;
+      }
+    }
+  }
+  * {
+    z-index: 2;
+  }
+}
+@media(min-width:767px) {
+  #projects {
+    .project-item {
+      margin: 0 0 30px;
+    }
+  }
+}

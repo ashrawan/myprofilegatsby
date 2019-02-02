@@ -5,6 +5,11 @@
   "version": "0.1.0",
   "author": "Shrawan Adhikari<ashrawan70@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.14",
+    "@fortawesome/free-brands-svg-icons": "^5.7.1",
+    "@fortawesome/free-solid-svg-icons": "^5.7.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "font-awesome": "^4.7.0",
     "gatsby": "^2.0.107",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.16",

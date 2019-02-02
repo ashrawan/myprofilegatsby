@@ -1,12 +1,13 @@
 import React from "react"
-import './../styles/index.css';
-import './../assets/css/bootstrap.min.css'
-import './../styles/styles.scss';
-
 import Home from "./Home";
+import SEO from "../components/seo";
+import MainLayout from "../components/MainLayout";
 
 const IndexPage = () => (
-  <Home />
+  <MainLayout>
+    <SEO title="Home" keywords={[`shrawan`, `developer`, `portfolio`]} />
+    <Home />
+  </MainLayout>
 )
 
 export default IndexPage
