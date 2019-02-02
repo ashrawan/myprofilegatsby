@@ -27,7 +27,7 @@ const Skills = () => {
                         <div className="col-md-4">
                             <FontAwesomeIcon icon={['fas', 'cubes']} />
                             <h4 className="service-heading">Tools &amp; Technology</h4>
-                            <p className="text-muted">Git, MySQL, Intellij, Jira, Heroku</p>
+                            <p className="text-muted">Git, MySQL, Intellij, Jira, Heroku, Postman</p>
                         </div>
                     </div>
                 </div>

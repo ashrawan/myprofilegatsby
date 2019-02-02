@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { graphql, StaticQuery } from "gatsby"
 
 const CustomImg = (data) => {
-    const { alt, imageName, className } = data.image;
+    const { alt, imageName, className, desc } = data.image;
     return (
         <StaticQuery
             query={graphql`
@@ -29,7 +29,7 @@ const CustomImg = (data) => {
                 )
                 return (
                     <>
-                        {!!image && <Img className={className} alt={alt} fluid={image.node.childImageSharp.fluid} alt={imageName} />}
+                        {!!image && <Img className={className} alt={alt} title={desc} fluid={image.node.childImageSharp.fluid} alt={imageName} />}
                     </>
                 );
             }}

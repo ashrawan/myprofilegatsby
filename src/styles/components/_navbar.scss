@@ -106,7 +106,7 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 
   .mainNav{
-    background-color: rgba($color: $secondary, $alpha: 0.98);
+    background-color: rgba($color: $primary, $alpha: 0.98);
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
       color: fade-out($white, .2) !important;
