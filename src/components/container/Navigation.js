@@ -8,7 +8,7 @@ class Navigation extends React.Component {
         super(props)
 
         this.state = {
-            isOpen: true
+            isOpen: false
         };
     }
 
@@ -35,7 +35,7 @@ class Navigation extends React.Component {
                         }}>
                     <span className="fixed-top" ref={ref => this.myDiv = ref}>
                         <nav className="navbar navbar-expand-lg navbar-light mainNav">
-                            <button className="nav-toggler" type="button" onClick={() => this.toggle()}>
+                            <button className="nav-toggler" aria-label="menu" type="button" onClick={() => this.toggle()}>
                                 <span className="navbar-toggler-icon"></span>
                             </button>
                             <div className="container">
