@@ -1,6 +1,7 @@
 import React from 'react';
 import { experiences } from '../../utils/data';
 import CustomImg from '../CustomImg';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Experience = () => {
 
@@ -19,7 +20,9 @@ const Experience = () => {
                             <div key={i} className="col-sm-4">
                                 <div className="team-member">
                                     <CustomImg image={company.companyLogo} />
-                                    <a href={company.companyWebsite} target="_blank" rel="noopener noreferrer"><h4>{company.companyName}</h4></a>
+                                    <OutboundLink href={company.companyWebsite} target="_blank" rel="noopener noreferrer">
+                                        <h4>{company.companyName}</h4>
+                                    </OutboundLink>
                                     <p className="text-muted">{company.position}</p>
                                     <ul className="list-inline social-buttons">
                                         {company.toolsImage.map((tool, i) => (

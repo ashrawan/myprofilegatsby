@@ -1,30 +1,31 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { P_LINKEDIN, P_FACEBOOK, P_MEDIUM, P_GITHUB } from '../../utils/Constant';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const ContactCircle = () => {
     return (
         <div>
             <ul className="list-inline social-buttons">
                 <li className="list-inline-item">
-                    <a target="_blank" rel="noopener noreferrer" href={P_LINKEDIN}>
+                    <OutboundLink href={P_LINKEDIN} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'linkedin']} title={"linkedin"} />
-                    </a>
+                    </OutboundLink>
                 </li>
                 <li className="list-inline-item">
-                    <a target="_blank" rel="noopener noreferrer" href={P_FACEBOOK}>
+                    <OutboundLink href={P_FACEBOOK} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'facebook-square']} title={"facebook"} />
-                    </a>
+                    </OutboundLink>
                 </li>
                 <li className="list-inline-item">
-                    <a target="_blank" rel="noopener noreferrer" href={P_MEDIUM}>
+                    <OutboundLink href={P_MEDIUM} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'medium']} title={"Medium"} />
-                    </a>
+                    </OutboundLink>
                 </li>
                 <li className="list-inline-item">
-                    <a target="_blank" rel="noopener noreferrer" href={P_GITHUB}>
+                    <OutboundLink href={P_GITHUB} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={['fab', 'github']} title={"Github"} />
-                    </a>
+                    </OutboundLink>
                 </li>
             </ul>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import CustomImg from '../CustomImg';
 import { myPortfolio } from '../../utils/data';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Projects = () => {
     return (
@@ -17,14 +18,14 @@ const Projects = () => {
                     <div className="row">
                         {myPortfolio.map((project, i) => (
                             <div key={i} className="col-md-3 col-sm-4 project-item">
-                                <a className="project-link" target="_blank" rel="noopener noreferrer" href={project.link}>
+                                <OutboundLink href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
                                     <div className="project-hover">
                                         <div className="project-hover-content">
                                             <i className="fas fa-plus fa-3x"></i>
                                         </div>
                                     </div>
                                     <CustomImg image={project.projectImage} />
-                                </a>
+                                </OutboundLink>
                                 <div className="project-caption">
                                     <h5>{project.caption}</h5>
                                     <p className="text-muted">{project.desc}</p>
