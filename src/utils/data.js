@@ -31,15 +31,15 @@ export const myPortfolio = [
     },
     {
         "projectImage": { "alt": "medium article on comprehensive guide to javascript", "imageName": "MjavaScript.JPG", "className": "img-portfolio", "desc": "Article written on medium - A complete Javascript guide" },
-        "caption": "Medium Blog",
+        "caption": "The Comprehensive Guide to JavaScript",
         "link": "https://medium.com/@ashrawan70/a-comprehensive-guide-to-javascript-7278f86f6e10",
-        "desc": "The Comprehensive Guide to JavaScript",
+        "desc": "Medium Blog",
     },
     {
         "projectImage": { "alt": "medium article on unit testing with mockito", "imageName": "Mmockito.JPG", "className": "img-portfolio", "desc": "Article demonstrating concepts and overview of mockito testing with spring" },
-        "caption": "Medium Blog",
+        "caption": "Understanding Mockito, The Overview",
         "link": "https://medium.com/@ashrawan70/understanding-the-mockito-74cd7e5a77e4",
-        "desc": "Understanding Mockito, The Overview",
+        "desc": "Medium Blog",
     }
 ];
 
