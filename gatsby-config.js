@@ -37,6 +37,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-134229437-1",
+        cookieDomain: "adhikarishrawan.com.np"
       },
     },
   ],
