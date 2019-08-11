@@ -13,7 +13,7 @@ const Header = () => {
                         <br />
                     </div>
                     <div className="col-lg-8 mx-auto">
-                        <p className="text-faded mb-5">Working 1+ Year in Software Industry; with technology in Java, Spring, and Hibernate; explores and loves both Angular, and React.</p>
+                        <p className="text-faded mb-5">Software Engineer with professional Industry experience on designing and developing core back-end applications using Java and Spring; and explores and loves both Angular, and React.</p>
                         <ContactCircle />
                     </div>
                 </div>
