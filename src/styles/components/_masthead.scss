@@ -1,39 +1,100 @@
-header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
-  background-image: url('../images/main.jpg');; 
-  background-position: center bottom 38%;
-  hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  h1 {
-    font-size: 0.7rem;
-  }
+.masthead {
+  background: linear-gradient(90deg, hsla(180, 22, 26, 1) 0%, hsla(335, 20, 51, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(180, 22, 26, 1) 0%, hsla(335, 20, 51, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(180, 22, 26, 1) 0%, hsla(335, 20, 51, 1) 100%);
+  padding-top: calc(4rem + 3.5rem);
+  padding-bottom: 4rem;
+
   p {
+    width: 80%;
     font-weight: 400;
-    letter-spacing: 0.1em;
-    background-color: #363c42;
-    text-shadow: 2px 2px 20px $white;
-    border-radius: 8px;
+    letter-spacing: 0.03em;
   }
+
+  .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    // font-family: $title-font-family;
+  }
+
+  .masthead-subheading {
+    font-size: 1.25rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .masthead-avatar {
+    width: 15rem;
+  }
+
+  @media (min-width: 1800px) {
+    .masthead {
+      padding-top: calc(6rem + 3.5rem);
+      padding-bottom: 6rem;
+
+      .masthead-heading {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+
+      .masthead-subheading {
+        font-size: 1.875rem;
+        margin: 1.5rem 0;
+      }
+
+    }
+  }
+
   @media (min-width: 768px) {
-    p {
-      font-size: 1.15rem;
+    .masthead {
+      .masthead-heading {
+        font-size: 1.8rem;
+      }
+
+      .masthead-subheading {
+        font-size: 1.15rem;
+      }
+
     }
   }
-  @media (min-width: 992px) {
-    height: 95vh;
-    min-height: 650px;
-    padding-top: 0;
-    padding-bottom: 0;
-    h1 {
-      font-size: 1.8rem;
+}
+
+// Custom divider with icon
+.divider-custom {
+  margin: 1.25rem 0 1.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: $secondary;
+    border-radius: 1rem;
+    border-color: $secondary;
+
+    &:first-child {
+      margin-right: 1rem;
+    }
+
+    &:last-child {
+      margin-left: 1rem;
     }
   }
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 2rem;
+
+  .divider-custom-icon {
+    color: $secondary;
+    font-size: 1.5rem;
+  }
+
+  &.divider-light {
+    .divider-custom-line {
+      background-color: $white
+    }
+
+    .divider-custom-icon {
+      color: $white;
     }
   }
 }
