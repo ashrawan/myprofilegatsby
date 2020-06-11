@@ -19,7 +19,7 @@ const Header = () => {
                 I am  <b>Software Engineer</b> working in tech industry since last 3+ years, developing and delivering high quality applications. 
                 I have worked on various projects from <b><i>Banking Services</i></b> to <b><i>Health Information Technology</i></b>, <b><i>Business Management Solution</i></b> and <b><i>R&D</i></b>. 
                 Experiencing and exploring the industry working model, project management tools and team collaboration; 
-                with hands-on experience on core back-end languages like <b><i>Java</i></b>, <b><i>Spring</i></b> and to fluently work in trending fronend technologies like <b><i>Angular</i></b>, and <b><i>React</i></b>.
+                with hands-on experience on core back-end languages like <b><i>Java</i></b>, <b><i>Spring</i></b> and frontend technologies like <b><i>Angular</i></b>, and <b><i>React</i></b>.
                 </p>
             </div>
         </header>
