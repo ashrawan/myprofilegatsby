@@ -16,8 +16,10 @@ const Header = () => {
                 </div>
                 <ContactCircle />
                 <p className="masthead-subheading">
-                    Software Engineer with valuable skills in System Design, Analysis and Development. Includes 2+ year of professional Industry experience
-                    with hands-on experience on core back-end technologies with Java, Spring, Hibernate and MySQL; and explores and loves both Angular, and React.
+                I am  <b>Software Engineer</b> working in tech industry since last 3+ years, developing and delivering high quality applications. 
+                I have worked on various projects from <b><i>Banking Services</i></b> to <b><i>Health Information Technology</i></b>, <b><i>Business Management Solution</i></b> and <b><i>R&D</i></b>. 
+                Experiencing and exploring the industry working model, project management tools and team collaboration; 
+                with hands-on experience on core back-end languages like <b><i>Java</i></b>, <b><i>Spring</i></b> and to fluently work in trending fronend technologies like <b><i>Angular</i></b>, and <b><i>React</i></b>.
                 </p>
             </div>
         </header>

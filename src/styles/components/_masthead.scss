@@ -7,7 +7,7 @@
 
   p {
     width: 80%;
-    font-weight: 400;
+    // font-weight: 400;
     letter-spacing: 0.03em;
   }
 
@@ -18,8 +18,11 @@
   }
 
   .masthead-subheading {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin: 1rem 0 0 0;
+    i {
+      color: #5a9698;
+    }
   }
 
   .masthead-avatar {
@@ -37,7 +40,7 @@
       }
 
       .masthead-subheading {
-        font-size: 1.875rem;
+        font-size: 1.675rem;
         margin: 1.5rem 0;
       }
 
@@ -51,7 +54,7 @@
       }
 
       .masthead-subheading {
-        font-size: 1.15rem;
+        font-size: 0.95rem;
       }
 
     }
