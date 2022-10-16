@@ -1,6 +1,8 @@
 import React from 'react';
 import ContactCircle from './ContactCircle';
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
     return (
         <footer className="container-fluid">
@@ -10,7 +12,7 @@ const Footer = () => {
                     <ContactCircle />
                 </div>
                 <div className="col-md-12 mt-3 footer-copyright">
-                    <span className="copyright">Copyright &copy; Shrawan Adhikari 2019</span>
+                    <span className="copyright">Copyright &copy; Shrawan Adhikari {year}</span>
                 </div>
             </div>
         </footer>

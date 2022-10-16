@@ -11,7 +11,7 @@ const Experience = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 text-center">
-                            <h2 className="section-heading text-uppercase">Professional Experience</h2>
+                            <h2 className="section-heading text-uppercase">Professional Experience &amp; Tracks</h2>
                             <h3 className="section-subheading text-muted">Future comes one day at a time.</h3>
                         </div>
                     </div>

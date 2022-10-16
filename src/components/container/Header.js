@@ -16,10 +16,11 @@ const Header = () => {
                 </div>
                 <ContactCircle />
                 <p className="masthead-subheading">
-                I am  <b>Software Engineer</b> working in tech industry since last 3+ years, developing and delivering high quality applications. 
-                I have worked on various projects from <b><i>Banking Services</i></b> to <b><i>Health Information Technology</i></b>, <b><i>Business Management Solution</i></b> and <b><i>R&D</i></b>. 
-                Experiencing and exploring the industry working model, project management tools and team collaboration; 
-                with hands-on experience on core back-end languages like <b><i>Java</i></b>, <b><i>Spring</i></b> and frontend technologies like <b><i>Angular</i></b>, and <b><i>React</i></b>.
+                    I am a <h3>Software Engineer</h3> <b>
+                        <FontAwesomeIcon icon="fa-solid fa-code" /></b> <br></br>
+                   Working in enterprise solutions, developing &amp; delivering high quality applications, since last <b>4+ years</b>.
+                    Loves to research and explore - new tools and technology.
+                    Skilled in using <b><i>Java, Spring, Docker, Kubernetes, and JavaScript, Angular, React, Bootstrap, Git, and Jira</i></b>.
                 </p>
             </div>
         </header>

@@ -39,8 +39,7 @@ const Tools = () => {
                     <FontAwesomeIcon icon={['fab', 'medium']} title={"Medium"} />
                 </li>
                 <li className="list-inline-item">
-                    <FontAwesomeIcon icon={['fab', 'php']} title={"PHP"} />
-                </li>
+                <FontAwesomeIcon icon="fa-brands fa-docker" title={"Docker"} />                </li>
             </ul>
         </div>
     );
