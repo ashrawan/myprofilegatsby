@@ -70,6 +70,16 @@ export const myPortfolio = [
 
 export const experiences = [
     {
+        "companyName": "Bank of America",
+        "companyLogo": { "alt": "bofa logo", "imageName": "bofa-logo.png", "className": "company-logo", "desc": "Bank Of America" },
+        "companyWebsite": "https://www.bankofamerica.com/",
+        "position": "Application Developer V",
+        "period": "",
+        "toolsImage": [
+            { "alt": "", "imageName": "", "className": "company-logo", "desc": "" },
+        ]
+    },
+    {
         "companyName": "Cotiviti Nepal Pvt. Ltd",
         "companyLogo": { "alt": "cotiviti logo", "imageName": "cotiviti.png", "className": "company-logo", "desc": "Cotiviti" },
         "companyWebsite": "https://www.cotiviti.com.np/",
@@ -89,16 +99,16 @@ export const experiences = [
             { "alt": "", "imageName": "", "className": "company-logo", "desc": "" },
         ]
     },
-    {
-        "companyName": "IAESTE NEPAL – Civil Initiative",
-        "companyLogo": { "alt": "iaeste logo", "imageName": "iaesteLogo.JPG", "className": "company-logo", "desc": "IAESTE" },
-        "companyWebsite": "https://iaeste.org/",
-        "position": "Volunteer",
-        "period": "",
-        "toolsImage": [
-            { "alt": "", "imageName": "", "className": "company-logo", "desc": "" },
-        ]
-    },
+    // {
+    //     "companyName": "IAESTE NEPAL – Civil Initiative",
+    //     "companyLogo": { "alt": "iaeste logo", "imageName": "iaesteLogo.JPG", "className": "company-logo", "desc": "IAESTE" },
+    //     "companyWebsite": "https://iaeste.org/",
+    //     "position": "Volunteer",
+    //     "period": "",
+    //     "toolsImage": [
+    //         { "alt": "", "imageName": "", "className": "company-logo", "desc": "" },
+    //     ]
+    // },
     // {
     //     "companyName": "Medium",
     //     "companyLogo": { "alt": "medium logo", "imageName": "medium.jpg", "className": "company-logo", "desc": "Medium" },
