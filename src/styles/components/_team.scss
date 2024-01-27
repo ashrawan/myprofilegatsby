@@ -1,16 +1,15 @@
 // Styling for the team section
 .team-member {
-  margin-bottom: 50px;
   text-align: center;
   .company-logo {
-    border: 7px solid $white;
-    height: 100px;
-    width: 100px;
+    // border: 1px solid $white;
+    max-height: 57px;
+    width: 170px;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 1%;
     transition: all .4s ease;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
   h4 {

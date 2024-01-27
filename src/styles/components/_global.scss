@@ -30,7 +30,10 @@ a {
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $primary;
+}
+.text-muted {
+  color: #c4c4c4 !important
 }
 
 h1,
@@ -145,6 +148,14 @@ img::-moz-selection {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
   }
 }
+
+.element {
+  background: linear-gradient(274deg, hsl(0deg 2% 42%), hsl(336deg, 46%, 17%));
+  background: -moz-linear-gradient(274deg, hsl(0deg 2% 42%), hsl(336deg, 46%, 17%));
+  background: -webkit-linear-gradient(274deg, hsl(0deg 2% 42%), hsl(336deg, 46%, 17%));
+  color: #fff;
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;

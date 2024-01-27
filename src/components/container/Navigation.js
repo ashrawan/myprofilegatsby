@@ -1,6 +1,8 @@
 import React from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-scroll';
+import {P_PERSONAL_BLOG } from '../../utils/Constant';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class Navigation extends React.Component {
 
@@ -56,6 +58,9 @@ class Navigation extends React.Component {
                                         </li>
                                         <li className="nav-item">
                                             <Link className="nav-link" activeClass="active" to="section-contact" spy={true} smooth={true} duration={500}> Contact </Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <OutboundLink className="nav-link" href={P_PERSONAL_BLOG} target="_blank" rel="noopener noreferrer">Blog</OutboundLink>
                                         </li>
                                     </ul>
                                 </div>

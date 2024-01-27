@@ -7,15 +7,15 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 const Projects = () => {
     return (
         <div>
-            <section className="bg-light" id="projects">
-                <div className="container">
+            <section className="" id="projects">
+                <div className="container-fluid pr-5 pl-5">
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <h2 className="section-heading text-uppercase">Projects Showcase</h2>
-                            <h3 className="section-subheading text-muted">Imagination is more important than knowledge.</h3>
+                            {/* <h3 className="section-subheading text-muted">Imagination is more important than knowledge.</h3> */}
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row mt-2">
                         {myPortfolio.map((project, i) => (
                             <div key={i} className="col-md-3 col-sm-4 project-item">
                                 <OutboundLink href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">

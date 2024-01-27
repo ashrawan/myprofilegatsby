@@ -90,9 +90,9 @@ export const experiences = [
         ]
     },
     {
-        "companyName": "F1Soft International Pvt. Ltd",
-        "companyLogo": { "alt": "f1soft logo", "imageName": "F1softLogo.png", "className": "company-logo", "desc": "F1soft" },
-        "companyWebsite": "http://www.f1soft.com/",
+        "companyName": "Logica Beans Pvt. Ltd",
+        "companyLogo": { "alt": "logica beans logo", "imageName": "logicabeans.png", "className": "company-logo", "desc": "Logica beans" },
+        "companyWebsite": "https://logicabeans.com/",
         "position": "Software Engineer",
         "period": "",
         "toolsImage": [

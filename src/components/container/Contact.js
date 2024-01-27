@@ -90,7 +90,7 @@ const Contact = () => {
 
     return (
         <div>
-            <section className="bg-light" id="contact">
+            <section className="" id="contact">
                 <div className="container">
 
                     <div className="row">
