@@ -10,14 +10,14 @@ const Header = () => {
     return (
         <header className="masthead bg-primary text-white text-center">
 
-            <div className="container-fluid ml-5">
+            <div className="container-fluid pl-5 pr-5">
                 <div className="row">
                     <div className="col-lg-4 text-center profile-img">
                         <CustomImg image={shrawanProfileImg} />
                     </div>
                     <div className="col-lg-8 text-center">
-                        <div className="container d-flex align-items-center flex-column">
-                            <h1 className="masthead-heading mb-0">Hi 👋, I'm Shrawan Adhikari </h1>
+                        <div className="container d-flex align-items-center flex-column pt-4">
+                            <h1 className="masthead-heading mb-0">Hi, I'm Shrawan Adhikari </h1>
                             <div className="divider-custom divider-light">
                                 <div className="divider-custom-line"></div>
                                 <div className="divider-custom-icon">
@@ -26,7 +26,7 @@ const Header = () => {
                                 <div className="divider-custom-line"></div>
                             </div>
                             <ContactCircle />
-                            <p className="masthead-subheading">
+                            <p className="masthead-subheading pb-4">
                                 I am a <h3>Software Engineer</h3> <b>
                                     <FontAwesomeIcon icon="fa-solid fa-code" /></b> <br></br>
                                 Currently working in enterprise solutions, with over <b>{totalYear}+ years</b> of experience in developing and delivering high-quality applications.

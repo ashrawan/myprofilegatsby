@@ -9,19 +9,15 @@ import { AWS_CONTACT_API_V1 } from '../../utils/Constant';
 const Contact = () => {
     const contactIllus = { "alt": "email campaign", "imageName": "ills/emailp.png", "className": "img-portfolio", "desc": "email-campaign-amico" };
 
-    const [formData, setFormData] = useState({
+    const initial = {
         name: '',
         email: '',
         subject: '',
         message: '',
-    });
+    };
+    const [formData, setFormData] = useState({ ...initial });
 
-    const [formErrors, setFormErrors] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-    });
+    const [formErrors, setFormErrors] = useState({ ...initial });
 
     const [formMessage, setFormMessage] = useState({
         warning: '',
@@ -73,6 +69,7 @@ const Contact = () => {
                     warning: '',
                     success: 'Your message was sent, thank you!',
                 });
+                setFormData({ ...initial });
             } else {
                 setFormMessage({
                     warning: 'Error sending the message. Please try again later.',
@@ -115,7 +112,7 @@ const Contact = () => {
                                                     field != 'message' ?
                                                         <div key={field} className="row">
                                                             <div className="col-md-12 form-group">
-                                                            {/* <label for={field} className="label">{field.toUpperCase()} </label> */}
+                                                                {/* <label for={field} className="label">{field.toUpperCase()} </label> */}
                                                                 <input
                                                                     type="text"
                                                                     className={`form-control ${formErrors[field] ? 'is-invalid' : ''}`}
@@ -151,11 +148,11 @@ const Contact = () => {
                                                     <div className="col-12">
                                                         <input type="submit" value="Send Message" className="btn btn-primary rounded-0 py-2 px-4" />
                                                         <span className="submitting"></span>
+                                                        {formMessage.warning && <div className="text-danger py-1 font-weight-bold" id="form-message-warning">{formMessage.warning}</div>}
+                                                        {formMessage.success && <div className="text-success py-1 font-weight-bold" id="form-message-success">{formMessage.success}</div>}
                                                     </div>
                                                 </div>
                                             </form>
-                                            {formMessage.warning && <div className="text-danger" id="form-message-warning">{formMessage.warning}</div>}
-                                            {formMessage.success && <div className="text-success" id="form-message-success">{formMessage.success}</div>}
                                         </div>
 
                                     </div>
