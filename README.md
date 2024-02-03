@@ -13,7 +13,7 @@
 ## Project Logs:
 | Date | Particulars |
 |--|--|
-| 01/10/2024 | Website Teamplate, React & Gatsby |
+| 01/10/2024 | Website Template, React & Gatsby |
 | 01/13/2024 | Update Navigation, header, and Skills |
 | 01/17/2024 | CSS & Image Upload, local build and deploy to S3 |
 | 01/21/2024 | DNS config, Route 53 & S3 Routing |
