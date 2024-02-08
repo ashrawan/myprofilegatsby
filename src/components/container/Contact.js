@@ -7,7 +7,7 @@ import { AWS_CONTACT_API_V1 } from '../../utils/Constant';
 
 
 const Contact = () => {
-    const contactIllus = { "alt": "email campaign", "imageName": "ills/emailp.png", "className": "img-portfolio", "desc": "email-campaign-amico" };
+    const contactIllus = { "alt": "email campaign", "imageName": "emailp.png", "className": "img-portfolio", "desc": "email-campaign-amico" };
 
     const initial = {
         name: '',
