@@ -2,15 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ContactCircle from "./ContactCircle";
 import CustomImg from "../CustomImg";
-import { helix } from 'ldrs'
+import Spn from "./Spn";
 import { P_LINKEDIN, P_PERSONAL_BLOG } from '../../utils/Constant';
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-helix.register();
 
 const Header = () => {
     const totalYear = new Date().getFullYear() - 2018
-    const shrawanProfileImg = { "alt": "Shrawan profile image", "imageName": "Shrawan.jpg", "className": "img-portfolio", "desc": "shrawan-profile-img" };
+    const shrawanProfileImg = { "alt": "Shrawan profile image", "imageName": "Shrawan-p.jpg", "className": "img-portfolio", "desc": "shrawan-profile-img" };
 
     return (
         <header className="masthead bg-primary text-white text-center">
@@ -21,8 +20,13 @@ const Header = () => {
                         <CustomImg image={shrawanProfileImg} />
                     </div> */}
                     <div className="col-lg-12 ">
-                    <div className="spn spn-left"><l-helix size="400" speed="27" color="#d1e9ff" ></l-helix></div>
-                    <div className="spn spn-right"><l-helix size="400" speed="27" color="#d1e9ff" ></l-helix></div>
+
+                    <div className="text-center profile-img">
+                        <CustomImg image={shrawanProfileImg} />
+                    </div>
+
+                    <Spn classes="spn-wrap spn-left"/>
+                    <Spn classes="spn-wrap spn-right"/>
 
                         <div className="container d-flex align-items-center flex-column pt-4">
                             <h1 className="masthead-heading mb-0">Hi, I'm Shrawan Adhikari </h1>
@@ -34,11 +38,12 @@ const Header = () => {
                                 <div className="divider-custom-line"></div>
                             </div>
                             <ContactCircle />
+
                             <p className="masthead-subheading pb-4">
                             <span className="font-summary">I’m a <b>Software Engineer</b> with <b>{totalYear}+ years</b> of experience in <b>creating, scaling, and maintaining</b> enterprise software products. </span>
                             <br/><br/>
                             I enjoy working with <b>Security, Microservices, Research, DevOps, AI, and emerging technologies</b>.
-                            My focus is on building innovative solutions, exploring new tools, and collaborating on impactful projects while sharing my insights through <b><OutboundLink href={P_PERSONAL_BLOG} target="_blank" rel="noopener noreferrer">Blogging</OutboundLink></b>.
+                            My passion is on building innovative solutions, exploring new tools, and collaborating on impactful projects while sharing my insights through <b><OutboundLink href={P_PERSONAL_BLOG} target="_blank" rel="noopener noreferrer">Blogging</OutboundLink></b>.
                             </p>
                         </div>
 

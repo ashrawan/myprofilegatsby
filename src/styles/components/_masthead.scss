@@ -7,8 +7,8 @@
 
   p {
     width: 80%;
-    // font-weight: 400;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.047em;
+    line-height: 1.5;
   }
 
   .masthead-heading {
@@ -69,26 +69,16 @@
   }
 }
 
-.spn {
-  position: absolute;
-  z-index: 1;
-  bottom: 20px;
-}
-.spn-left {
-  // left: -147px;
-  left:50px;
-}
-.spn-right {
-  // right: -147px;
-  right: 50px;
-}
-
 .profile-img {
-  border-radius: 4%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 11%;
+    margin: 0 auto;
   img {
     transition: all .4s ease-out !important;
     &:hover {
-      transform: scale(1.07);
+      transform: scale(1.17);
     }
   }
 
