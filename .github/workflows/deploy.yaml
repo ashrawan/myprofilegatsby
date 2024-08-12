@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  build-and-deploy:
+  build:
     name: Build and deploy Gatsby site
     runs-on: ubuntu-latest
     steps:
