@@ -3,11 +3,11 @@
   border-bottom: 1px solid fade-out($gray-900, .9);
   background-color: $dark;
   @include serif-font;
-  transition: all;
+  transition: all 10ms;
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: $primary;
+    color: $navtext;
     @include serif-font;
     &:focus,
     &:hover {
@@ -21,12 +21,12 @@
         font-size: .9rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: $white;
+        color: $navtext;
         &:hover {
-          color: rgba($color: $primary, $alpha: 1.0) !important;
+          color: $navtext-active !important;
         }
         &.active {
-          color: $primary !important;
+          color: $navtext-active !important;
           background-color: transparent;
           &:hover {
             background-color: transparent;
@@ -114,14 +114,14 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 
   .mainNav{
-    background-color: rgba($color: $dark, $alpha: 0.98);
+    background-color: $navbg-active;
     .active {
-      color: rgba($color: $primary, $alpha: 1.0) !important;
+      color: $navtext-active !important;
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
       &:hover {
-        color: rgba($color: $primary, $alpha: 1.0) !important;
+        color: $navtext-active !important;
       }
     }
   }

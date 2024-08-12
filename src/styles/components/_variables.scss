@@ -10,12 +10,16 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
-$dark: #343a40 !default;
+$dark: hsl(182deg 31% 21%) !default;
 
-$primary: #f7bc7e !default;
+$navbg-active: rgb(151 168 185 / 98%);
+$navtext-active: rgb(42 78 117);
+$navtext: #d6e6f7;
+
+$primary: #373737 !default;
 // $primary: #FB6222 !default;
 // $secondary: #4684bd !default;
 $secondary: #4684bd !default;
 $headh2-text: #F05F40 !default;
 // $selection: #639ed4;
-$selection: #806e6e;
+$selection: #6a9fed70;

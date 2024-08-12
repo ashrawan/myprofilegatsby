@@ -146,7 +146,7 @@ const Contact = () => {
                                                 ))}
                                                 <div className="row">
                                                     <div className="col-12">
-                                                        <input type="submit" value="Send Message" className="btn btn-primary rounded-0 py-2 px-4" />
+                                                        <input type="submit" value="Send Message" className="btn btn-secondary rounded-0 py-2 px-4" />
                                                         <span className="submitting"></span>
                                                         {formMessage.warning && <div className="text-danger py-1 font-weight-bold" id="form-message-warning">{formMessage.warning}</div>}
                                                         {formMessage.success && <div className="text-success py-1 font-weight-bold" id="form-message-success">{formMessage.success}</div>}

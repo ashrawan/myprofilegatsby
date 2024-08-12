@@ -2,6 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ContactCircle from "./ContactCircle";
 import CustomImg from "../CustomImg";
+import { helix } from 'ldrs'
+import { P_LINKEDIN, P_PERSONAL_BLOG } from '../../utils/Constant';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
+helix.register();
 
 const Header = () => {
     const totalYear = new Date().getFullYear() - 2018
@@ -12,10 +17,13 @@ const Header = () => {
 
             <div className="container-fluid pl-5 pr-5">
                 <div className="row">
-                    <div className="col-lg-4 text-center profile-img">
+                    {/* <div className="col-lg-4 text-center profile-img">
                         <CustomImg image={shrawanProfileImg} />
-                    </div>
-                    <div className="col-lg-8 text-center">
+                    </div> */}
+                    <div className="col-lg-12 ">
+                    <div className="spn spn-left"><l-helix size="400" speed="27" color="#d1e9ff" ></l-helix></div>
+                    <div className="spn spn-right"><l-helix size="400" speed="27" color="#d1e9ff" ></l-helix></div>
+
                         <div className="container d-flex align-items-center flex-column pt-4">
                             <h1 className="masthead-heading mb-0">Hi, I'm Shrawan Adhikari </h1>
                             <div className="divider-custom divider-light">
@@ -27,13 +35,13 @@ const Header = () => {
                             </div>
                             <ContactCircle />
                             <p className="masthead-subheading pb-4">
-                                I am a <h3>Software Engineer</h3> <b>
-                                    <FontAwesomeIcon icon="fa-solid fa-code" /></b> <br></br>
-                                Currently working in enterprise solutions, with over <b>{totalYear}+ years</b> of experience in developing and delivering high-quality applications.
-                                I Love to research and explore new tools and technologies.
-                                My Core Proficiency is in <b><i>Java, Spring, Docker, Kubernetes, and JavaScript, Angular, React, Bootstrap, Git, and Jira</i></b>.
+                            <span className="font-summary">I’m a <b>Software Engineer</b> with <b>{totalYear}+ years</b> of experience in <b>creating, scaling, and maintaining</b> enterprise software products. </span>
+                            <br/><br/>
+                            I enjoy working with <b>Security, Microservices, Research, DevOps, AI, and emerging technologies</b>.
+                            My focus is on building innovative solutions, exploring new tools, and collaborating on impactful projects while sharing my insights through <b><OutboundLink href={P_PERSONAL_BLOG} target="_blank" rel="noopener noreferrer">Blogging</OutboundLink></b>.
                             </p>
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="container-fluid">
             <div className="row">
                 <div className="col-md-12">
-                    <h2>Shrawan Adhikari</h2>
+                    <h3>Shrawan Adhikari</h3>
                     <ContactCircle />
                 </div>
                 <div className="col-md-12 mt-3 footer-copyright">

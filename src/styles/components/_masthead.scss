@@ -1,7 +1,7 @@
 .masthead {
-  background: linear-gradient(90deg, hsla(0, 0, 0, 1) 0%, hsla(336, 20, 23, 23) 100%);
-  background: -moz-linear-gradient(90deg, hsla(0, 0, 0, 1) 0%, hsla(336, 23, 23, 1) 100%);
-  background: -webkit-linear-gradient(77deg,hsl(0, 0%, 0%),hsl(336, 23%, 23%));
+  background: linear-gradient(90deg, hsla(0, 0, 0, 1) 0%, hsl(0deg 0% 94% / 82%) 100%);
+  background: -moz-linear-gradient(90deg, hsla(0, 0, 0, 1) 0%, hsl(0deg 0% 94% / 82%) 100%);
+  background: -webkit-linear-gradient(77deg,hsl(0, 0%, 0%),hsl(0deg 0% 94% / 82%));
   padding-top: calc(4rem + 3.5rem);
   padding-bottom: 0.1rem;
 
@@ -21,8 +21,16 @@
     font-size: 1.1rem;
     margin: 1rem 0 0 0;
     i {
-      color: #99929c;
+      color: #fffff6;
     }
+    a {
+      color: #fffff6;
+      text-decoration: underline;
+    }
+  }
+  .masthead-subheading .font-summary {
+    font-size: 1.47rem;
+    color: #eaf5ff;
   }
 
   .masthead-avatar {
@@ -59,6 +67,20 @@
 
     }
   }
+}
+
+.spn {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+}
+.spn-left {
+  // left: -147px;
+  left:50px;
+}
+.spn-right {
+  // right: -147px;
+  right: 50px;
 }
 
 .profile-img {
