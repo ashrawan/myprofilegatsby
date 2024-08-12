@@ -28,7 +28,7 @@ jobs:
         run: npm ci
       
       - name: Install Gatsby CLI
-        run: npm install -g gatsby-cli@4.24.4
+        run: npm install -g gatsby-cli@4.24.0
       
       - name: Build
         run: gatsby build
