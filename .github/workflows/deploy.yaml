@@ -5,7 +5,6 @@ on:
     branches:
       - master
 
-# for OIDC
 permissions:
   id-token: write
   contents: read
@@ -47,7 +46,7 @@ jobs:
           S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
         run: |
           aws s3 sync public s3://$S3_BUCKET --delete --exact-timestamps
-
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
