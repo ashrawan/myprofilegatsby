@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
                   >
                     <div className="absolute inset-0 bg-gradient-to-b from-blue-500/20 to-purple-500/20" />
                     <img
-                      src={`/src/images/${project.projectImage.imageName}`}
+                      src={`/images/${project.projectImage.imageName}`}
                       alt={project.caption}
                       className="w-full h-full object-cover"
                     />
@@ -141,7 +141,7 @@ const Projects: React.FC = () => {
                 {/* Project Image */}
                 <div className="relative h-64 -mx-6 -mt-6 mb-6">
                   <img
-                    src={`/src/images/${selectedProject.projectImage.imageName}`}
+                    src={`/${selectedProject.projectImage.imageName}`}
                     alt={selectedProject.projectImage.alt}
                     className="w-full h-full object-cover"
                   />

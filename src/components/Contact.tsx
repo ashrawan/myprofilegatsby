@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailImage from '../images/emailp.png';
 
 const AWS_CONTACT_API_V1 = 'https://dgnz8tpxwe.execute-api.us-east-1.amazonaws.com/dev';
 
@@ -136,11 +135,13 @@ const Contact: React.FC = () => {
               <div className="relative">
                 <div className={`absolute -inset-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg opacity-20 blur-xl ${isSubmitting ? 'animate-pulse' : ''}`}></div>
                 <div className="relative">
-                  <img 
-                    src={emailImage} 
-                    alt="Contact Email" 
-                    className={`w-full h-auto rounded-lg opacity-80 hover:opacity-100 transition-opacity duration-300 ${isSubmitting ? 'animate-pulse' : ''}`}
-                  />
+                  <div className="lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0">
+                    <img
+                      src="/images/emailp.png"
+                      style={contactImageStyle}
+                      alt="Contact Email" 
+                    />
+                  </div>
                 </div>
               </div>
             </div>

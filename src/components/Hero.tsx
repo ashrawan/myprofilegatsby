@@ -248,7 +248,7 @@ const Hero: React.FC = () => {
               {/* Image Container */}
               <div className="relative w-full p-2">
                 <img 
-                  src="/src/images/Shrawanrbg.png" 
+                  src="/images/shrawanrbg.png" 
                   alt="Shrawan Adhikari"
                   className="w-full h-auto object-contain filter contrast-125 transition-all duration-300 opacity-90 group-hover:opacity-100"
                 />
