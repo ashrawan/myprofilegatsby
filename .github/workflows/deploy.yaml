@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    name: Build and deploy Gatsby site
+    name: Build and deploy Vite site
     runs-on: ubuntu-latest
 
     steps:
@@ -26,14 +26,11 @@ jobs:
       - name: Install Project Dependencies
         run: npm ci
       
-      - name: Install Gatsby CLI
-        run: npm install -g gatsby-cli@4.24.0
-      
       - name: Build
-        run: gatsby build
+        run: npm run build
       
-      - name: Verify build
-        run: ls -la public
+      - name: Verify build output
+        run: ls -la dist
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -45,7 +42,7 @@ jobs:
         env:
           S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
         run: |
-          aws s3 sync public s3://$S3_BUCKET --delete --exact-timestamps
+          aws s3 sync dist s3://$S3_BUCKET --delete --exact-timestamps
           
   deploy:
     needs: build
