@@ -1,6 +1,6 @@
 export const myPortfolio = [
     {
-        "projectImage": { "alt": "Microservice-based application", "imageName": "/saproj3.png", "className": "img-portfolio", "desc": "Microservice based project" },
+        "projectImage": { "alt": "Microservice-based application", "imageName": "saproj3.png", "className": "img-portfolio", "desc": "Microservice based project" },
         "caption": "Microservices",
         "link": "https://github.com/ashrawan/swa-proj3",
         "desc": "Spring, Kafka, Docker, Kubernetes, GKE",
@@ -30,7 +30,7 @@ export const myPortfolio = [
         "techStack": ["Angular 11", "TypeScript", "Bootstrap 5", "npm", "JavaScript"]
     },
     {
-        "projectImage": { "alt": "Careers Crew", "imageName": "/careercrew.png", "className": "img-portfolio", "desc": "applicant tracking app for candidate and employer using spring and angular" },
+        "projectImage": { "alt": "Careers Crew", "imageName": "careercrew.png", "className": "img-portfolio", "desc": "applicant tracking app for candidate and employer using spring and angular" },
         "caption": "Careers Crew",
         "link": "https://github.com/ashrawan/careers-crew",
         "desc": "Spring, Angular 11, MySQL",
@@ -46,7 +46,7 @@ export const myPortfolio = [
         "techStack": ["Spring Boot", "Angular 11", "MySQL", "Java", "TypeScript", "Bootstrap"]
     },
     {
-        "projectImage": { "alt": "Codegrave Personal Blog", "imageName": "/codegrave.png", "className": "img-portfolio", "desc": "A personal blog" },
+        "projectImage": { "alt": "Codegrave Personal Blog", "imageName": "codegrave.png", "className": "img-portfolio", "desc": "A personal blog" },
         "caption": "CodeGrave",
         "link": "https://codegrave.com",
         "desc": "A Personal Blog",
@@ -61,7 +61,7 @@ export const myPortfolio = [
         "techStack": ["React", "Next.js", "Tailwind CSS", "Markdown"]
     },
     {
-        "projectImage": { "alt": "leave management system screenshot", "imageName": "/leave-management.png", "className": "img-portfolio", "desc": "Leave Management System built using spring and angular" },
+        "projectImage": { "alt": "leave management system screenshot", "imageName": "leave-management.png", "className": "img-portfolio", "desc": "Leave Management System built using spring and angular" },
         "caption": "Leave Management",
         "link": "https://github.com/ashrawan/leave-management-angular",
         "desc": "Spring, Angular 6, MySQL",
@@ -77,7 +77,7 @@ export const myPortfolio = [
         "techStack": ["Spring Boot", "Angular 6", "MySQL", "Java", "TypeScript", "Bootstrap"]
     },
     {
-        "projectImage": { "alt": "Iaeste cms screenshot", "imageName": "/iaeste-volunteer1.png", "className": "img-portfolio", "desc": "IAESTE website build during volunteer period, hosted on heroku" },
+        "projectImage": { "alt": "Iaeste cms screenshot", "imageName": "iaeste-volunteer1.png", "className": "img-portfolio", "desc": "IAESTE website build during volunteer period, hosted on heroku" },
         "caption": "IAESTE CMS",
         "link": "https://miaeste.herokuapp.com/",
         "desc": "Spring, React, Redux, MySQL",
@@ -93,7 +93,7 @@ export const myPortfolio = [
         "techStack": ["Spring Boot", "React", "Redux", "MySQL", "Heroku", "Java", "JavaScript"]
     },
     {
-        "projectImage": { "alt": "rabbitmq official site screenshot", "imageName": "/rabbitmq-sample.PNG", "className": "img-portfolio", "desc": "Rabbitmq sample code on spring boot demonstrating dlq binding with queue" },
+        "projectImage": { "alt": "rabbitmq official site screenshot", "imageName": "rabbitmq-sample.PNG", "className": "img-portfolio", "desc": "Rabbitmq sample code on spring boot demonstrating dlq binding with queue" },
         "caption": "RabbitMQ Demo Sample",
         "link": "https://github.com/ashrawan/rabbitmq-sample",
         "desc": "Spring, RabbitMQ",
@@ -124,7 +124,7 @@ export const myPortfolio = [
         "techStack": ["React", "Spring Boot", "MySQL", "JavaScript", "Java", "Bootstrap"]
     },
     {
-        "projectImage": { "alt": "mockito testing sample source code", "imageName": "/srcmockito.png", "className": "img-portfolio", "desc": "Source code on testing using mockito in spring" },
+        "projectImage": { "alt": "mockito testing sample source code", "imageName": "srcmockito.png", "className": "img-portfolio", "desc": "Source code on testing using mockito in spring" },
         "caption": "Unit Testing Sample",
         "link": "https://github.com/ashrawan/crud-jpa-with-test",
         "desc": "Spring, Mockito, Testing",
