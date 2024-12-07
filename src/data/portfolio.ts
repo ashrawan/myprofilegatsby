@@ -1,8 +1,9 @@
 export const myPortfolio = [
     {
         "projectImage": { "alt": "Microservice-based application", "imageName": "saproj3.png", "className": "img-portfolio", "desc": "Microservice based project" },
-        "caption": "Microservices",
+        "caption": "Microservices - Sample",
         "link": "https://github.com/ashrawan/swa-proj3",
+        "blogLink": "https://codegrave.com/mastering-microservices-a-practical-exploration-conquering-complexity/",
         "desc": "Spring, Kafka, Docker, Kubernetes, GKE",
         "longDescription": "A comprehensive microservices architecture project leveraging Spring Boot, Apache Kafka for event-driven communication, containerized with Docker, and orchestrated using Kubernetes on Google Kubernetes Engine (GKE).",
         "features": [
