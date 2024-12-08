@@ -42,7 +42,19 @@ jobs:
         env:
           S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
         run: |
-          aws s3 sync dist s3://$S3_BUCKET --delete --exact-timestamps
+          # Generate a unique deployment identifier
+          DEPLOY_TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+          
+          # Create a deployment folder with timestamp
+          aws s3 sync dist "s3://$S3_BUCKET/deploy-$DEPLOY_TIMESTAMP" --delete --exact-timestamps \
+            --cache-control "public, max-age=31536000, immutable"
+          
+          # Update the latest symlink/pointer
+          aws s3api put-object --bucket "$S3_BUCKET" --key "latest" --body <(echo "deploy-$DEPLOY_TIMESTAMP")
+          
+          # Update index.html with no-cache to always fetch the latest
+          aws s3 cp "s3://$S3_BUCKET/deploy-$DEPLOY_TIMESTAMP/index.html" "s3://$S3_BUCKET/index.html" \
+            --cache-control "no-cache, must-revalidate" --content-type "text/html"
           
   deploy:
     needs: build
